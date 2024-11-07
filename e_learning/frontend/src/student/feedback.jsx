@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./feedback.css";  // Make sure to import the correct CSS file
-
+import Navbar from "./Navbar";
 function Feedback() {
   const [formData, setFormData] = useState({
     name: "",
@@ -24,6 +24,7 @@ function Feedback() {
 
   return (
     <div className="container mt-4" id="Feedback">
+      <Navbar />
       <h2 className="text-center mb-4">Feedback</h2>
       <div className="row">
         <div className="col-md-8">

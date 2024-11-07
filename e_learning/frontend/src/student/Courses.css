@@ -1,3 +1,14 @@
+html,body{
+    background: hsla(215, 21%, 83%, 1);
+
+background: linear-gradient(90deg, hsla(215, 21%, 83%, 1) 0%, hsla(24, 41%, 77%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(215, 21%, 83%, 1) 0%, hsla(24, 41%, 77%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(215, 21%, 83%, 1) 0%, hsla(24, 41%, 77%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9D1DC", endColorstr="#DDC0AD", GradientType=1 );
+}
 .course_container{
     display: flex;
     gap: 20px;

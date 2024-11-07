@@ -1,6 +1,7 @@
 import React from 'react';
 import CourseCard from './CourseCard.jsx';
 import './Courses.css'; 
+import Navbar from './Navbar.jsx';
 
 const Courses = () => {
     const courses = [
@@ -11,6 +12,7 @@ const Courses = () => {
 
     return (
         <div>
+            <Navbar/>
             <h1>Courses</h1>
             <div className='course_container'>
                 {courses.map(course => (

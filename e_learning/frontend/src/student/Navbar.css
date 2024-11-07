@@ -1,0 +1,65 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Full width */
+    background-color: #8D8F91; /* gray-800 in Tailwind */
+    color: white;
+    padding: 16px 0; /* Adjusted padding for consistent spacing */
+    z-index: 1000; /* Ensures the navbar appears above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px; /* Matches Tailwind's container width */
+    margin: 0 auto;
+    padding: 0 20px; /* Adds horizontal padding */
+}
+
+.navbar .link {
+    font-size: 3rem; /* Matches text-xl */
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 16px;
+}
+
+.navbar .menu a,
+.navbar .menu button {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 1.25rem; /* Consistent font size */
+}
+
+.navbar .menu a:hover,
+.navbar .menu button:hover {
+    color: #a0aec0; /* gray-400 in Tailwind */
+}
+
+/* Ensure page content doesn't hide under fixed navbar */
+.body-content {
+    padding-top: 80px; /* Adjust based on navbar height */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .menu {
+        gap: 10px;
+    }
+}

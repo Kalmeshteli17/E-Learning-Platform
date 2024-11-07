@@ -1,10 +1,10 @@
 /* Container styling for Feedback section */
 html,body{
-    display: flex;              /* Enable flexbox */
-  flex-direction: column;     /* Align items vertically */
+  display: flex;              /* Enable flexbox */
+  flex-direction: column;   
   justify-content: center;    /* Vertically center the content */
   align-items: center;        /* Horizontally center the content */
-  height: 100vh;              /* Ensure the container takes full viewport height */
+  height: 120vh;              /* Ensure the container takes full viewport height */
   padding: 20px;
 }
 
@@ -35,7 +35,7 @@ html,body{
     align-items: center;        /* Center form elements horizontally */
     width: 100%;
     max-width: 500px; 
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
   }
@@ -47,10 +47,11 @@ html,body{
   
   /* Submit button styling */
   .btn-primary {
+    align-items: center;
     background-color: #ff0022;
     border-color: #007bff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15 px 20px;
     font-size: 1em;
     border-radius: 5px;
     cursor: pointer;
