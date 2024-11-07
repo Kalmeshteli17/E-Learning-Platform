@@ -1,9 +1,11 @@
 import React from "react";
 import './about.css';
+import Navbar from "./Navbar";
 
 function AboutUs() {
   return (
     <div className="container mt-4" id="About">
+      <Navbar/>
       {/* Start About Us Container */}
       <h2 className="text-center mb-4">About Us</h2> {/* About Us Heading */}
       <div className="row"> {/* Start About Us Row */}
